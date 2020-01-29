@@ -17,32 +17,35 @@
           <b-dropdown-item href="#">
             <router-link to=/editarfilme>Editar Filmes</router-link>
           </b-dropdown-item>
-          <b-dropdown-item href="#">
+          <b-dropdown-item>
             <router-link to=/excluirfilme>Excluir Filmes</router-link>
           </b-dropdown-item>
-          <b-dropdown-item href="#">
+          <b-dropdown-item>
             <router-link to=/listarfilme>Listar Filmes</router-link>
           </b-dropdown-item>
         </b-nav-item-dropdown>
 
-        <b-nav-item-dropdown text="Lang">
-          <b-dropdown-item href="#">
+        <b-nav-item-dropdown text="Diretores">
+          <b-dropdown-item>
             <router-link to=/criardiretor>Criar Diretores</router-link>
           </b-dropdown-item>
-          <b-dropdown-item href="#">
+          <b-dropdown-item>
             <router-link to=/editardiretor>Editar Diretores</router-link>
           </b-dropdown-item>
-          <b-dropdown-item href="#">
+          <b-dropdown-item>
             <router-link to=/excluirdiretor>Excluir Diretores</router-link>
           </b-dropdown-item>
-          <b-dropdown-item href="#">
+          <b-dropdown-item>
             <router-link to=/listardiretor>Listar Diretores</router-link>
           </b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>      
     </b-collapse>
   </b-navbar>
+  <router-view>
+  </router-view>
 </div>
+
 </template>
 
 <script>

@@ -7,6 +7,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { BootstrapVue } from 'bootstrap-vue'
 Vue.use(BootstrapVue)
 
+import Home from './components/Home.vue'
+
 //import components Filmes
 import CriarFilme from './components/Filmes/CriarFilme'
 import EditarFilme from './components/Filmes/EditarFilme'
@@ -24,6 +26,8 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
+  //Home
+  {path: "/",component: Home},
   //Filmes
   {path: "/criarfilme",component: CriarFilme},
   {path: "/editarfilme",component: EditarFilme},
@@ -37,8 +41,10 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
-})
+  mode: "history",
+  routes,
+  base: "/"
+});
 
 
 
